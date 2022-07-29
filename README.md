@@ -46,6 +46,24 @@ E dê o comando :
 
 Se acabar com BUILD SUCCESSFUL, great job ! Tá pronto para o uso !
 
+É necessário saber onde a instalação do LdaMallet foi feita, pois a path com o mallet binário é utilizada.
+Sendo assim, tenha ciência de onde ela foi criada e quando achar use o comando :
+    
+    pwd
+    
+Para achar a Path do Mallet binário, vá para o diretório que você estava antes de clonar o Mallete dê o comando : 
+
+    cd Mallet/bin/
+    
+Para descobrir onde você está :
+
+    pwd
+    
+Copie essa path e adicione:  */mallet* no fim.
+
+**Agora você tem a path que será utilizada pelo Jupyter Notebook.**
+    
+
 # Tutorial de Instalação 
 
 Para fazer uso do LdaMallet, cujo documentação de instalação se encontra em : https://mallet.cs.umass.edu/download.php, que é uma implementação em Java de LDA, é preciso ter java instalado na máquina. Mas para facilitar nosso progresso na linguagem Python.O Gensim fornece um wrapper, que faz uso do LdaMallet em Java. A documentação desse wrapper se encontra em : https://radimrehurek.com/gensim_3.8.3/models/wrappers/ldamallet.html.
@@ -93,14 +111,6 @@ Para verificar se a versão do Gensim instalada é a certa, dê um :
     
 E procure por gensim==3.8.3, se achar, tudo certo.
 
-## LdaMallet
-
-É necessário saber onde a instalação do LdaMallet foi feita, pois a path com o mallet binário é utilizada.
-Sendo assim, tenha ciência de onde ela foi criada e quando achar use o comando :
-    
-    pwd
-    
-copie a path e cole na linha XX do código. 
 
 ## Boa sorte !
 
