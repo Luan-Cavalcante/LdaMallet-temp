@@ -58,13 +58,20 @@ Todo o passo a passo será feito aqui.
 
 Como a ferramenta utilizada para rodar os notebooks é o Jupyter Lab, é necessário criar um ambiente virtual e depois criar um kernel com as especificações de versões que serão utilizadas. 
 
-    - python3 -m venv nomedovenv
-    - source nomedovenv/bin/activate
     
-    Agora de dentro do ambiente virtual : 
+    python3 -m venv nomedovenv
     
-    - pip install ipykernel
-    - ipython kernel install --user --name=projectname
+Ative o ambiente :
+
+    source nomedovenv/bin/activate
+    
+Agora de dentro do ambiente virtual : 
+    
+    pip install ipykernel
+    
+ Dê mais o comando : 
+ 
+    ipython kernel install --user --name=projectname
     
 
 ## Requirements
