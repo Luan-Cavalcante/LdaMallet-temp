@@ -46,7 +46,12 @@ E dê o comando :
 
 Se acabar com BUILD SUCCESSFUL, great job ! Tá pronto para o uso !
 
-Para achar a Path do Mallet binário, na pasta do repositório : 
+É necessário saber onde a instalação do LdaMallet foi feita, pois a path com o mallet binário é utilizada.
+Sendo assim, tenha ciência de onde ela foi criada e quando achar use o comando :
+    
+    pwd
+    
+Para achar a Path do Mallet binário, vá para o diretório que você estava antes de clonar o Mallete dê o comando : 
 
     cd Mallet/bin/
     
@@ -57,6 +62,7 @@ Para descobrir onde você está :
 Copie essa path e adicione:  */mallet* no fim.
 
 **Agora você tem a path que será utilizada pelo Jupyter Notebook.**
+    
 
 # Tutorial de Instalação 
 
@@ -70,13 +76,20 @@ Todo o passo a passo será feito aqui.
 
 Como a ferramenta utilizada para rodar os notebooks é o Jupyter Lab, é necessário criar um ambiente virtual e depois criar um kernel com as especificações de versões que serão utilizadas. 
 
-    - python3 -m venv nomedovenv
-    - source nomedovenv/bin/activate
     
-    Agora de dentro do ambiente virtual : 
+    python3 -m venv nomedovenv
     
-    - pip install ipykernel
-    - ipython kernel install --user --name=projectname
+Ative o ambiente :
+
+    source nomedovenv/bin/activate
+    
+Agora de dentro do ambiente virtual : 
+    
+    pip install ipykernel
+    
+ Dê mais o comando : 
+ 
+    ipython kernel install --user --name=projectname
     
 
 ## Requirements
@@ -98,14 +111,6 @@ Para verificar se a versão do Gensim instalada é a certa, dê um :
     
 E procure por gensim==3.8.3, se achar, tudo certo.
 
-## LdaMallet
-
-É necessário saber onde a instalação do LdaMallet foi feita, pois a path com o mallet binário é utilizada.
-Sendo assim, tenha ciência de onde ela foi criada e quando achar use o comando :
-    
-    pwd
-    
-copie a path e cole na linha XX do código. 
 
 ## Boa sorte !
 
