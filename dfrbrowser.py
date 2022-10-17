@@ -64,24 +64,22 @@ class dfrBrowserConverter():
         
         dc = {'i': csc_matrix(doc_topics).toarray().tolist()}
         
-        with open(self.path+'/dt.json', 'w') as f:
+        with open('dt.json', 'w') as f:
             json.dump(dc, f, indent=4)
         
-        with ZipFile(self.path+'/dt.json.zip', 'w') as zip:
-            zip.write(self.path+'/dt.json')
+        with ZipFile('dt.json.zip', 'w') as zip:
+            zip.write('dt.json')
             
-        os.remove(self.path+'/dt.json')
+        os.remove('dt.json')
         
     def create_meta(self, data):
         
-        data.to_csv(self.path+'/meta.csv', sep=',', index=False, header=True)
+        data.to_csv('meta.csv', sep=',', index=False, header=True)
         
-        with ZipFile(self.path+'/meta.csv.zip', 'w') as zip:
-            zip.write(self.path+'/meta.csv')
+        with ZipFile('meta.csv.zip', 'w') as zip:
+            zip.write('meta.csv')
             
-        os.remove(self.path+'/meta.csv')
-    
-    # def def_vis()
+        os.remove('meta.csv')
         
     def get_word_topics(self):
         
